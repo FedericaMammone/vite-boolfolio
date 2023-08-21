@@ -8,7 +8,7 @@ export default {
   data: function () {
     return {
       projects: [],
-      technologies: []
+      pages: []
     }
   },
   methods: {
@@ -50,15 +50,16 @@ export default {
   </ul>
 
   <div class="pages row justify-content-center cursor-pointer">
-    <div v-for="(page, index) in pages" :key="index" class="page col " :class="(page.active ? 'bg-white text-dark' : 'bg-secondary')
+    <div v-for="(page, index) in pages" :key="index" class="page col " :class="(page.active ? 'bg-white text-dark' : 'bg-primary')
       + ' '
       + (page.url == null ? 'd-none' : '')" v-html="page.label" role="button" @click="loadPage(page.url)">
     </div>
   </div>
 </template>
 
-<style scoped>
-.read-the-docs {
-  color: #888;
+<style>
+.page {
+
+  width: 50px;
 }
 </style>
