@@ -1,4 +1,14 @@
-<script>
+
+<template>
+  <header-comp />
+  <router-view></router-view>
+</template>
+<script setup>
+import HeaderComp from './components/HeaderComp.vue'
+</script>
+
+
+<!-- <script>
 import ProjectCard from './components/ProjectCard.vue'
 
 import axios from 'axios';
@@ -61,5 +71,7 @@ export default {
       </div>
     </div>
   </div>
-</template>
 
+  <router-view></router-view>
+</template>
+ -->
