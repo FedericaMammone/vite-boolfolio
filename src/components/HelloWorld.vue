@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 import axios from 'axios';
 
 
@@ -50,7 +50,7 @@ export default {
   </ul>
 
   <div class="pages row justify-content-center cursor-pointer">
-    <div v-for="(page, index) in pages" :key="index" class="page col " :class="(page.active ? 'bg-white text-dark' : 'bg-primary')
+    <div v-for="(page, index) in pages" :key="index" class="col mx-2 py-3 rounded fs-4" :class="(page.active ? 'bg-white text-dark' : 'bg-primary')
       + ' '
       + (page.url == null ? 'd-none' : '')" v-html="page.label" role="button" @click="loadPage(page.url)">
     </div>
@@ -61,5 +61,5 @@ export default {
 .page {
 
   width: 50px;
-}
-</style>
+} -->
+<!-- </style> -->
